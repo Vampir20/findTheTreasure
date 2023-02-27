@@ -1,0 +1,83 @@
+*
+    margin: 0
+    padding: 0
+
+
+body
+    text-align: center
+    background-image: url("../img/bg.jpeg")
+    background-size: cover
+    background-attachment: fixed
+
+
+h1
+    font-size: 100px 
+    color: transparent
+    display: inline-block
+    text-align: center
+    font-family: 'Mynerve', cursive
+    background: rgb(2,0,36)
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(255,0,223,1) 13%, rgba(255,13,203,1) 42%, rgba(88,143,237,1) 58%, rgba(42,179,246,1) 80%, rgba(0,212,255,1) 100%)
+    -webkit-background-clip: text
+    background-clip: text
+
+
+h2
+    display: inline-block
+    background-color: #fff
+    padding: 20px
+    border-radius: 10px 
+    margin-top: 40px
+    text-align: center
+    font-family: 'Mynerve', cursive
+    -webkit-box-shadow: 21px 15px 32px 12px rgba(0,0,0,0.66)
+    box-shadow: 21px 15px 32px 12px rgba(0,0,0,0.66)
+
+
+
+.game
+    display: block
+    width: 500px
+    margin: 0 auto
+    /* чтобы пират выравнивался относительно родителя */
+    position: relative
+
+
+
+
+
+.map
+    width: 100%
+
+.pirate
+    pointer-events: none
+    transition: 3s
+    position: absolute
+    height: 45px
+    top: 0
+    left: 45px
+
+
+.new-game
+    display: inline-block
+    text-align: center
+    margin-top: 20px
+    padding: 10px
+    outline: none
+    border: none
+    border-radius: 20px
+    background: rgb(2,0,36)
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(158,8,139,1) 13%, rgba(255,13,203,1) 39%, rgba(88,143,237,1) 67%, rgba(0,212,255,1) 100%)
+
+
+
+.treasure
+    width: 50%
+    top:50%
+    left: 50%
+    position: absolute
+    transform: translate(-50%, -50%) scale(0) rotate(0deg)
+    opacity: 0
+    pointer-events: none
+    transition: 2s
+

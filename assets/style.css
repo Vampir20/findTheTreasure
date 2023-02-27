@@ -1,0 +1,79 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  text-align: center;
+  background-image: url("../img/bg.jpeg");
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+h1 {
+  font-size: 100px;
+  color: transparent;
+  display: inline-block;
+  text-align: center;
+  font-family: "Mynerve", cursive;
+  background: rgb(2, 0, 36);
+  background: linear-gradient(90deg, rgb(2, 0, 36) 0%, rgb(255, 0, 223) 13%, rgb(255, 13, 203) 42%, rgb(88, 143, 237) 58%, rgb(42, 179, 246) 80%, rgb(0, 212, 255) 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+h2 {
+  display: inline-block;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  margin-top: 40px;
+  text-align: center;
+  font-family: "Mynerve", cursive;
+  box-shadow: 21px 15px 32px 12px rgba(0, 0, 0, 0.66);
+}
+
+.game {
+  display: block;
+  width: 500px;
+  margin: 0 auto;
+  /* чтобы пират выравнивался относительно родителя */
+  position: relative;
+}
+
+.map {
+  width: 100%;
+}
+
+.pirate {
+  pointer-events: none;
+  transition: 3s;
+  position: absolute;
+  height: 45px;
+  top: 0;
+  left: 45px;
+}
+
+.new-game {
+  display: inline-block;
+  text-align: center;
+  margin-top: 20px;
+  padding: 10px;
+  outline: none;
+  border: none;
+  border-radius: 20px;
+  background: rgb(2, 0, 36);
+  background: linear-gradient(90deg, rgb(2, 0, 36) 0%, rgb(158, 8, 139) 13%, rgb(255, 13, 203) 39%, rgb(88, 143, 237) 67%, rgb(0, 212, 255) 100%);
+}
+
+.treasure {
+  width: 50%;
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%) scale(0) rotate(0deg);
+  opacity: 0;
+  pointer-events: none;
+  transition: 2s;
+}/*# sourceMappingURL=style.css.map */
